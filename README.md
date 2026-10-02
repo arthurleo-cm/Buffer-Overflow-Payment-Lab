@@ -34,3 +34,18 @@ O laboratório utiliza dois programas:
 - GCC
 - GDB
 - Linguagem C
+## Proteção de Stack
+
+O experimento também compara o comportamento do programa vulnerável
+com a compilação utilizando proteção de stack.
+
+A comparação demonstra como mecanismos de proteção podem detectar
+corrupções da memória da stack e impedir que o fluxo de execução
+seja alterado da mesma maneira.
+## Aviso
+
+Este projeto foi desenvolvido exclusivamente para fins acadêmicos,
+em um ambiente controlado e com código criado para o laboratório.
+
+As técnicas estudadas não devem ser utilizadas contra sistemas,
+programas ou serviços sem autorização.
