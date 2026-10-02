@@ -1,3 +1,22 @@
+/*
+ * Laboratório acadêmico de segurança
+ 
+ * Vulnerabilidade:
+ * O servidor copia o identificador de transação para um buffer
+ * de tamanho fixo sem validar o tamanho da entrada.
+ 
+ * Endereço de authorize_payment:
+ * [0x401156]
+ 
+ * Distância entre buffer e endereço de retorno:
+  [24]
+ 
+ * Observação:
+  Os valores acima são específicos do ambiente utilizado.
+ */
+
+/* implementação do laboratório */
+
 /* O objetivo é fazer o Programa A, o payment_server, executar a função authorize_payment, que nenhum caminho do código de A chega a chamar, estourando o vetor received_id da função process_transaction e sobrescrevendo o endereço de retorno. Este arquivo deve FUNCIONAR -- compilar, executar e levar o Programa A a autorizar o pagamento -- e deve EXPLICAR o próprio ataque nos comentários curtos que você escreverá onde cada marca abaixo pede, pois a correção vai compilar e executar este programa contra o Programa A e ler os seus comentários para verificar se você entendeu por que o ataque funciona. */
 #include <stdio.h>
 #include <string.h>
