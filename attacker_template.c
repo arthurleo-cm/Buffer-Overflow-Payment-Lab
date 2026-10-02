@@ -26,11 +26,9 @@ int main(void)
 {
 
     /* Descubra o endereço da função authorize_payment no Programa A, com o comando print &authorize_payment no gdb ou com o utilitário nm, e anote qual é a função e como você chegou a esse valor. */
-    /* Resposta: */
     unsigned long target = 0x401156 ;   /* <-- substitua pelo endereço real */
 	
     /* Meça quantos bytes separam o início do vetor do endereço de retorno e anote o que ocupa o espaço entre os dois. */
-    /* Resposta: */
     int offset = 24;               /* <-- substitua pela distância real */
 
     char payload[64];
